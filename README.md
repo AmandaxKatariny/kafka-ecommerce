@@ -37,8 +37,20 @@ O que aprendemos nessa aula:
 
 O que aprendemos nessa aula:
 
-A importância de evitar copy e paste
-Criando nossa camada de abstração
-Criando nosso Dispatcher
-Criando nosso Service
+- A importância de evitar copy e paste
+- Criando nossa camada de abstração
+- Criando nosso Dispatcher
+- Criando nosso Service
+
+## Aula 04 - Serialização customizada
+
+O que aprendemos nessa aula:
+
+- Como limpar os diretórios de log e dados do zookeeper e kafka
+- Como utilizar diretórios não temporátios para o zookeeper e kafka
+- Como utilizar o GSON
+- Criando um serializador customizado do Kafka
+- Verificar o conteúdo exato de uma mensagem em um programa
+- Deserialização customizada
+- Lidando com customização por serviço
 
