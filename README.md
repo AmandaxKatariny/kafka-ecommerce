@@ -54,3 +54,12 @@ O que aprendemos nessa aula:
 - Deserialização customizada
 - Lidando com customização por serviço
 
+## Aula 05 - Microsserviços e módulos
+
+O que aprendemos nessa aula:
+
+- como criar módulos
+- como manter tudo em um mono repo
+- como gerenciar dependências entre módulos
+- como gerar os binários de cada módulo
+
