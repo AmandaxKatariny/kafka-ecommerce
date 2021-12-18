@@ -32,3 +32,13 @@ O que aprendemos nessa aula:
 - `/bin/kafka-topics.sh --alter --bootstrap-server localhost:9092 --topic ECOMMERCE_NEW_ORDER --partitions 3`
 - `bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe`
 
+
+## Aula 03 - Criando nossa camada
+
+O que aprendemos nessa aula:
+
+A importância de evitar copy e paste
+Criando nossa camada de abstração
+Criando nosso Dispatcher
+Criando nosso Service
+
