@@ -32,6 +32,8 @@ public class FraudDetectorService {
                     }
                     System.out.println("Order processed");
                 }
+            }else{
+                System.out.println("Não Encontrei registros");
             }
         }
     }
