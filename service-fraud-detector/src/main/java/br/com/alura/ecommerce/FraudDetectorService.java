@@ -1,5 +1,3 @@
-
-
 package br.com.alura.ecommerce;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -21,8 +19,7 @@ public class FraudDetectorService {
         }
     }
 
-    private final KafkaDispatcher<Order>orderKafkaDispatcher = new KafkaDispatcher<>();
-
+    private final KafkaDispatcher<Order> orderDispatcher = new KafkaDispatcher<>();
 
     private void parse(ConsumerRecord<String, Order> record) throws ExecutionException, InterruptedException {
         System.out.println("------------------------------------------");
@@ -37,16 +34,14 @@ public class FraudDetectorService {
             // ignoring
             e.printStackTrace();
         }
-
         var order = record.value();
-
-        if (isFraud(order)) {
-            //pretending that the fraud happens when the amount is >= 4500
-            System.out.println("Order is a Fraud: " + order);
-            orderKafkaDispatcher.send("ECOMMERCE_ORDER_REJECTED", order.getUserId(), order);
-        }else{
+        if(isFraud(order)) {
+            // pretending that the fraud happens when the amount is >= 4500
+            System.out.println("Order is a fraud!!!!!" + order);
+            orderDispatcher.send("ECOMMERCE_ORDER_REJECTED", order.getEmail(), order);
+        } else {
             System.out.println("Approved: " + order);
-            orderKafkaDispatcher.send("ECOMMERCE_ORDER_APPROVED", order.getUserId(), order);
+            orderDispatcher.send("ECOMMERCE_ORDER_APPROVED", order.getEmail(), order);
         }
 
     }

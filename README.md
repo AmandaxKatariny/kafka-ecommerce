@@ -10,3 +10,11 @@ O que aprendemos nessa aula:
 - Como lidar com patterns e novos topics
 - Como acessar um banco de dados
 - Problemas de schema que vão sendo levantados durante a evolução dos serviços
+- 
+## Aula 02 - Evoluindo um servico
+
+O que aprendemos nessa aula:
+
+- como evoluir um serviço sem quebrar os schemas
+- como pensar a evolução de um serviço
+- discutindo UUID e id único
