@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-log" />
+        <module name="service-http-ecommerce" />
         <module name="common-kafka" />
         <module name="service-new-order" />
         <module name="ecommerce" />
@@ -15,5 +16,8 @@
         <module name="service-users" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="service-http" target="12" />
+    </bytecodeTargetLevel>
   </component>
 </project>
