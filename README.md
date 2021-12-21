@@ -2,6 +2,12 @@
 
 Kafka: Fast delegate, evolução e Cluster de Brokers
 
+### Links úteis 
+- https://c4model.com/
+- https://github.com/joelparkerhenderson/architecture-decision-record/blob/main/examples/programming-languages/index.md
+- https://adr.github.io/
+
+
 ## Aula 01 - Novos Produtores e Consumidores
 
 O que aprendemos nessa aula:
